@@ -6,6 +6,7 @@
 
 * {
   font-family: 'SF Pro Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
