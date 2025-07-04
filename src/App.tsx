@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import StarWarsCursor from './components/Common/StarWarsCursor';
 import Loading from './components/Common/Loading';
 import Landing from './pages/Landing';
 import StudentAuth from './pages/Auth/StudentAuth';
@@ -64,6 +65,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="min-h-screen cosmic-gradient text-white">
+          <StarWarsCursor />
           <AppRoutes />
         </div>
       </Router>
