@@ -74,10 +74,10 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           style={{
             background: 'linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(60, 60, 60, 0.9) 100%)',
             clipPath: 'polygon(50% 0%, 80% 30%, 100% 100%, 0% 100%, 20% 30%)',
-            border: '1px solid rgba(255, 59, 48, 0.4)',
+            border: '1px solid rgba(138, 43, 226, 0.4)',
             boxShadow: isClicking 
-              ? '0 0 20px rgba(255, 59, 48, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
-              : '0 0 10px rgba(255, 59, 48, 0.4)',
+              ? '0 0 20px rgba(138, 43, 226, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
+              : '0 0 10px rgba(138, 43, 226, 0.4)',
           }}
         />
         
@@ -85,23 +85,23 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
         <div 
           className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-1 transition-all duration-200"
           style={{
-            background: 'linear-gradient(90deg, rgba(255, 59, 48, 0.8) 0%, rgba(139, 69, 19, 0.8) 100%)',
+            background: 'linear-gradient(90deg, rgba(138, 43, 226, 0.8) 0%, rgba(75, 0, 130, 0.8) 100%)',
             borderRadius: '2px',
             boxShadow: isClicking || isHovering 
-              ? '0 0 6px rgba(255, 59, 48, 0.8)' 
+              ? '0 0 6px rgba(138, 43, 226, 0.8)' 
               : 'none',
           }}
         />
 
-        {/* Red Lightsaber */}
+        {/* Bluish Violet Lightsaber */}
         {(isHovering || isClicking) && (
           <div
             className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full origin-bottom transition-all duration-300"
             style={{
               width: '2px',
               height: isClicking ? '36px' : '28px',
-              background: 'linear-gradient(to top, rgba(255, 59, 48, 1) 0%, rgba(255, 59, 48, 0.8) 50%, rgba(255, 59, 48, 0.3) 100%)',
-              boxShadow: '0 0 8px rgba(255, 59, 48, 0.8), 0 0 16px rgba(255, 59, 48, 0.4)',
+              background: 'linear-gradient(to top, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.8) 50%, rgba(138, 43, 226, 0.3) 100%)',
+              boxShadow: '0 0 8px rgba(138, 43, 226, 0.8), 0 0 16px rgba(138, 43, 226, 0.4)',
               borderRadius: '1px',
               animation: isClicking ? 'sith-ignite 0.3s ease-out' : 'sith-hum 2s ease-in-out infinite',
             }}
@@ -114,8 +114,8 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           style={{
             transform: 'scale(4)',
             background: isClicking
-              ? 'radial-gradient(circle, rgba(255, 59, 48, 0.2) 0%, rgba(139, 69, 19, 0.1) 50%, transparent 70%)'
-              : 'radial-gradient(circle, rgba(255, 59, 48, 0.1) 0%, rgba(60, 60, 60, 0.05) 50%, transparent 70%)',
+              ? 'radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, rgba(75, 0, 130, 0.1) 50%, transparent 70%)'
+              : 'radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, rgba(60, 60, 60, 0.05) 50%, transparent 70%)',
             animation: 'dark-force-pulse 3s ease-in-out infinite',
           }}
         />
@@ -190,12 +190,12 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
         <div 
           className="absolute inset-0 transition-all duration-200"
           style={{
-            background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(160, 82, 45, 0.8) 50%, rgba(75, 0, 130, 0.9) 100%)',
+            background: 'linear-gradient(135deg, rgba(75, 0, 130, 0.9) 0%, rgba(138, 43, 226, 0.8) 50%, rgba(88, 86, 214, 0.9) 100%)',
             clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
-            border: '1px solid rgba(160, 82, 45, 0.6)',
+            border: '1px solid rgba(138, 43, 226, 0.6)',
             boxShadow: isClicking 
-              ? '0 0 20px rgba(139, 69, 19, 0.8), 0 0 30px rgba(75, 0, 130, 0.6)'
-              : '0 0 10px rgba(139, 69, 19, 0.4)',
+              ? '0 0 20px rgba(138, 43, 226, 0.8), 0 0 30px rgba(75, 0, 130, 0.6)'
+              : '0 0 10px rgba(138, 43, 226, 0.4)',
             animation: 'crystal-rotate 4s linear infinite',
           }}
         />
@@ -205,7 +205,7 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           className="absolute inset-0"
           style={{
             transform: 'scale(2.5)',
-            background: 'radial-gradient(circle, rgba(139, 69, 19, 0.2) 0%, rgba(75, 0, 130, 0.1) 50%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, rgba(75, 0, 130, 0.1) 50%, transparent 70%)',
             animation: 'crystal-pulse 3s ease-in-out infinite',
           }}
         />
@@ -230,7 +230,7 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
             background: 'radial-gradient(circle at 30% 30%, rgba(100, 100, 100, 0.9) 0%, rgba(60, 60, 60, 0.8) 70%, rgba(40, 40, 40, 0.9) 100%)',
             border: '1px solid rgba(100, 100, 100, 0.4)',
             boxShadow: isClicking 
-              ? '0 0 20px rgba(255, 0, 0, 0.8), inset -2px -2px 4px rgba(0, 0, 0, 0.6)'
+              ? '0 0 20px rgba(138, 43, 226, 0.8), inset -2px -2px 4px rgba(0, 0, 0, 0.6)'
               : '0 0 10px rgba(100, 100, 100, 0.4), inset -2px -2px 4px rgba(0, 0, 0, 0.4)',
           }}
         />
@@ -240,10 +240,10 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           className="absolute top-1 left-1 w-1 h-1 rounded-full transition-all duration-200"
           style={{
             background: isClicking || isHovering 
-              ? 'rgba(255, 0, 0, 1)' 
+              ? 'rgba(138, 43, 226, 1)' 
               : 'rgba(100, 100, 100, 0.6)',
             boxShadow: isClicking || isHovering 
-              ? '0 0 8px rgba(255, 0, 0, 0.8)' 
+              ? '0 0 8px rgba(138, 43, 226, 0.8)' 
               : 'none',
           }}
         />
@@ -253,8 +253,8 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           <div
             className="absolute top-1 left-1 w-20 h-0.5 origin-left"
             style={{
-              background: 'linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 0.5) 50%, transparent 100%)',
-              boxShadow: '0 0 6px rgba(255, 0, 0, 0.8)',
+              background: 'linear-gradient(90deg, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.5) 50%, transparent 100%)',
+              boxShadow: '0 0 6px rgba(138, 43, 226, 0.8)',
               animation: 'destruction-beam 0.3s ease-out',
             }}
           />
@@ -265,7 +265,7 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           className="absolute inset-0 rounded-full"
           style={{
             transform: 'scale(3)',
-            background: 'radial-gradient(circle, rgba(100, 100, 100, 0.1) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%)',
             animation: 'imperial-pulse 4s ease-in-out infinite',
           }}
         />
@@ -289,10 +289,10 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           style={{
             background: 'linear-gradient(135deg, rgba(40, 40, 40, 0.95) 0%, rgba(20, 20, 20, 0.9) 100%)',
             clipPath: 'polygon(50% 0%, 85% 25%, 100% 100%, 0% 100%, 15% 25%)',
-            border: '1px solid rgba(255, 59, 48, 0.3)',
+            border: '1px solid rgba(138, 43, 226, 0.3)',
             boxShadow: isClicking 
-              ? '0 0 20px rgba(255, 59, 48, 0.6)'
-              : '0 0 8px rgba(255, 59, 48, 0.3)',
+              ? '0 0 20px rgba(138, 43, 226, 0.6)'
+              : '0 0 8px rgba(138, 43, 226, 0.3)',
           }}
         />
 
@@ -305,8 +305,8 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
               style={{
                 width: '2px',
                 height: isClicking ? '32px' : '24px',
-                background: 'linear-gradient(to top, rgba(255, 59, 48, 1) 0%, rgba(255, 59, 48, 0.8) 50%, rgba(255, 59, 48, 0.3) 100%)',
-                boxShadow: '0 0 8px rgba(255, 59, 48, 0.8)',
+                background: 'linear-gradient(to top, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.8) 50%, rgba(138, 43, 226, 0.3) 100%)',
+                boxShadow: '0 0 8px rgba(138, 43, 226, 0.8)',
                 borderRadius: '1px',
                 animation: 'unstable-blade 1.5s ease-in-out infinite',
               }}
@@ -318,8 +318,8 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
               style={{
                 width: '8px',
                 height: '1px',
-                background: 'linear-gradient(to left, rgba(255, 59, 48, 1) 0%, rgba(255, 59, 48, 0.3) 100%)',
-                boxShadow: '0 0 4px rgba(255, 59, 48, 0.6)',
+                background: 'linear-gradient(to left, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.3) 100%)',
+                boxShadow: '0 0 4px rgba(138, 43, 226, 0.6)',
                 animation: 'unstable-blade 1.5s ease-in-out infinite',
               }}
             />
@@ -330,8 +330,8 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
               style={{
                 width: '8px',
                 height: '1px',
-                background: 'linear-gradient(to right, rgba(255, 59, 48, 1) 0%, rgba(255, 59, 48, 0.3) 100%)',
-                boxShadow: '0 0 4px rgba(255, 59, 48, 0.6)',
+                background: 'linear-gradient(to right, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.3) 100%)',
+                boxShadow: '0 0 4px rgba(138, 43, 226, 0.6)',
                 animation: 'unstable-blade 1.5s ease-in-out infinite',
               }}
             />
@@ -343,7 +343,7 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
           className="absolute inset-0 rounded-full"
           style={{
             transform: 'scale(3.5)',
-            background: 'radial-gradient(circle, rgba(255, 59, 48, 0.1) 0%, rgba(0, 122, 255, 0.05) 50%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, rgba(0, 122, 255, 0.05) 50%, transparent 70%)',
             animation: 'conflicted-pulse 3s ease-in-out infinite',
           }}
         />
@@ -374,17 +374,17 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
     const opacity = (index + 1) / length * 0.8;
     switch (variant) {
       case 'darth-vader':
-        return `rgba(255, 59, 48, ${opacity})`;
+        return `rgba(138, 43, 226, ${opacity})`;
       case 'sith-lightning':
         return `rgba(138, 43, 226, ${opacity})`;
       case 'dark-crystal':
-        return `rgba(139, 69, 19, ${opacity})`;
+        return `rgba(138, 43, 226, ${opacity})`;
       case 'death-star':
-        return `rgba(100, 100, 100, ${opacity})`;
+        return `rgba(138, 43, 226, ${opacity * 0.6})`;
       case 'kylo-ren':
-        return `rgba(255, 59, 48, ${opacity * 0.8})`;
+        return `rgba(138, 43, 226, ${opacity * 0.8})`;
       default:
-        return `rgba(255, 59, 48, ${opacity})`;
+        return `rgba(138, 43, 226, ${opacity})`;
     }
   };
 
@@ -392,17 +392,17 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
     const intensity = 4 + index;
     switch (variant) {
       case 'darth-vader':
-        return `0 0 ${intensity}px rgba(255, 59, 48, 0.6)`;
+        return `0 0 ${intensity}px rgba(138, 43, 226, 0.6)`;
       case 'sith-lightning':
         return `0 0 ${intensity}px rgba(138, 43, 226, 0.6)`;
       case 'dark-crystal':
-        return `0 0 ${intensity}px rgba(139, 69, 19, 0.6)`;
+        return `0 0 ${intensity}px rgba(138, 43, 226, 0.6)`;
       case 'death-star':
-        return `0 0 ${intensity}px rgba(100, 100, 100, 0.4)`;
+        return `0 0 ${intensity}px rgba(138, 43, 226, 0.4)`;
       case 'kylo-ren':
-        return `0 0 ${intensity}px rgba(255, 59, 48, 0.5)`;
+        return `0 0 ${intensity}px rgba(138, 43, 226, 0.5)`;
       default:
-        return `0 0 ${intensity}px rgba(255, 59, 48, 0.6)`;
+        return `0 0 ${intensity}px rgba(138, 43, 226, 0.6)`;
     }
   };
 
@@ -440,7 +440,7 @@ const SithCursor: React.FC<SithCursorProps> = ({ variant = 'darth-vader' }) => {
             top: mousePosition.y - 20,
             width: '40px',
             height: '40px',
-            border: `2px solid ${variant === 'sith-lightning' ? 'rgba(138, 43, 226, 0.6)' : 'rgba(255, 59, 48, 0.6)'}`,
+            border: `2px solid rgba(138, 43, 226, 0.6)`,
             animation: 'sith-ripple 0.6s ease-out forwards',
           }}
         />
