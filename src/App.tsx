@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import StarWarsCursor from './components/Common/StarWarsCursor';
+import SithCursor from './components/Common/SithCursor';
 import Loading from './components/Common/Loading';
 import Landing from './pages/Landing';
 import StudentAuth from './pages/Auth/StudentAuth';
@@ -65,7 +65,9 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="min-h-screen cosmic-gradient text-white">
-          <StarWarsCursor />
+          {/* Choose your Sith cursor variant here */}
+          <SithCursor variant="darth-vader" />
+          {/* Other variants: 'sith-lightning', 'dark-crystal', 'death-star', 'kylo-ren' */}
           <AppRoutes />
         </div>
       </Router>
